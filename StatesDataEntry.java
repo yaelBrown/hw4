@@ -34,4 +34,5 @@ public class StatesDataEntry {
 	public static void printStateBird() {
 		System.out.println(Arrays.toString(maryland));
 	}
+	
 }
