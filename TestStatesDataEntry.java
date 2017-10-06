@@ -11,7 +11,7 @@ package hw4;
 public class TestStatesDataEntry {
 	public static void main(String[] args) {
 		StatesDataEntry.promptForState();
-		System.out.println();
+		System.out.println(StatesDataEntry.input);
 		StatesDataEntry.printStateBird();
 	}
 
