@@ -1,14 +1,15 @@
 package hw4;
 
 import java.lang.reflect.Array;
-//import java.util.Arrays;
 
 public class StateArraySearch {
 	// Initialize other variables
-	String lookFor = null;
+	static String state = null;
+	static String bird = null;
+	static String flower = null;
 	
 	// Create array that holds results
-	static String[][] results;
+	static String results[][]; 
 	
 	// Initialize State Array with bird and flower information
 	static String[][] states = new String[][]{
@@ -68,10 +69,17 @@ public class StateArraySearch {
 		for (int i = 0; i < Array.getLength(states); i++)
 			if (searchString == states[i][0]) {
 				System.out.println("its a match");
-			} 
+				state = states[i][0];
+				bird = states[i][1];
+				flower = states[i][2];
+			}
 	}
 	
 	public static void main(String[] args) {
 		searchStates("Alaska");
+		System.out.println(state);
+		System.out.println(bird);
+		System.out.println(flower);
+		System.out.println(results);
 	}
 }
